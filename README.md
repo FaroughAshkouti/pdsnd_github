@@ -1,5 +1,9 @@
+Implemented by : Farough Ashkouti
+
+BY: python, pandas, numpy and pycharm IDE
+
 ### Date created
-This project has been implemented on May 23
+This project has been implemented on May 23 2020
 
 ### Project Title
 USA BikeShare data Analysis

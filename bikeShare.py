@@ -117,7 +117,7 @@ def hour_12_str(hour):
 
 
 # //////////////////////////////////////////////////////////////////////////////////////////////////
-
+# Displays statistics on the most frequent times of travel
 def time_stats(df):
     print('\nMost Frequent Times of Travel...')
 
@@ -137,7 +137,7 @@ def time_stats(df):
 
 
 # /////////////////////////////////////////////////////////////////////////////////////////////////
-
+# Displays statistics on the most popular stations and trip
 def station_stats(df):
     print('  Most Popular Stations and Trip...')
     filtered_rides = len(df)
@@ -168,7 +168,7 @@ def station_stats(df):
 
 
 # /////////////////////////////////////////////////////////////////////////////////////////////
-
+# Converts number of seconds to human readable string format
 def seconds_to_HMS_str(total_seconds):
     minutes, seconds = divmod(total_seconds, 60)
     hours, minutes = divmod(minutes, 60)
@@ -193,7 +193,7 @@ def seconds_to_HMS_str(total_seconds):
 
 
 # /////////////////////////////////////////////////////////////////////////////////////////////////
-
+# Displays statistics on the total and average trip duration
 def trip_duration_stats(df):
     print('\nTrip Duration...')
 
@@ -210,7 +210,7 @@ def trip_duration_stats(df):
 
 
 # //////////////////////////////////////////////////////////////////////////////////
-
+# Displays statistics on bikeshare users
 def user_stats(df):
     print('\nUser Stats...')
 
@@ -240,7 +240,7 @@ def user_stats(df):
         print('*************************************************************')
 
 #//////////////////////////////////////////////////////////////////////////////////////////////////////
-
+# Show five lines of raw data, then asks if they would like to see 5 more
 def show_raw_data(df):
 
     show_rows = 5
