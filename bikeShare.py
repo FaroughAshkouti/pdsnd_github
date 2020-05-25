@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+import mathplotlib as mp
 
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
@@ -244,18 +245,18 @@ def user_stats(df):
 def show_raw_data(df):
 
     show_rows = 5
-    start = 0
-    end = show_rows - 1
+    start_rows = 0
+    end_rows = show_rows - 1
 
     print('\n Would you like to see five raw data from the current dataset?')
     while True:
         raw_data = input('(y or n):  ')
         if raw_data.lower() == 'y':
-            print('\nShowing rows {} to {}:'.format(start + 1, end + 1))
+            print('\nShowing rows {} to {}:'.format(start_rows + 1, end_rows + 1))
 
-            print('\n', df.iloc[start : end + 1])
-            start += show_rows
-            end += show_rows
+            print('\n', df.iloc[start_rows : end_rows + 1])
+            start_rows += show_rows
+            end_rows += show_rows
 
             print('-----------------------------------------------------------------')
             print('\nWould you like to see the next {} rows?'.format(show_rows))
